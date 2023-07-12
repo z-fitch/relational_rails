@@ -1,0 +1,11 @@
+<a href="/artwork">All Art</a>
+<a href="/museum">All Museums</a>
+<a href="/">Home</a>
+
+<h1><%= @museum.name %></h1>
+<a href="/museum/<%= @museum.id %>/artwork">Artworks</a>
+<h3>Exhibits: <%= @museum.exhibits %></h3>
+<p>Floors: <%= @museum.floors %></p>
+<p>Current Amount of Artwork: <%= @museum.artworks.count %></p>
+<p>Art that can be held: <%= @museum.occupancy %></p>
+<p>Can hold more? <%= @museum.can_fit_more_art %></p>

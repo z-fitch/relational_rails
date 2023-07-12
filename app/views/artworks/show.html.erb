@@ -1,0 +1,12 @@
+<a href="/museum">All Museums</a>
+<a href="/artwork">All Art</a>
+<a href="/">Home</a>
+
+<h1><%= @artwork.name %></h1>
+<h3>The Artist: <%= @artwork.artist_name %></h3>
+<p>Era: <%= @artwork.time_period %></p>
+<p>Created With: <%= @artwork.medium %></p>
+<p>Floor in Museum: <%= @artwork.location %></p>
+<p>Available to see: <%= @artwork.length_of_stay %> days</p>
+<p>Can be Auctioned: <%= @artwork.able_to_auction %></p>
+<p>Estimated Price: <%= @artwork.price %></p>

@@ -1,0 +1,11 @@
+<a href="/">Home</a>
+<h1>Welcome to the museum index</h1>
+<a href="/artwork">All Art</a>
+
+<% @museums.each do |museum| %>
+  <h3><a href="/museum/<%= museum.id %>"><%= museum.name %></a></h3>
+  <p><%= museum.created_at %></p>
+  <p><%= @artworks %></p>
+<% end  %>
+
+<a href="/artwork">Add Another Museum</a>
